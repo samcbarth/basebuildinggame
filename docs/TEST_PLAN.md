@@ -2,6 +2,15 @@
 
 ## Smoke Test
 
+### Browser
+
+1. Run `py -3.12 -m http.server 8000`.
+2. Open `http://localhost:8000/docs/`.
+3. Confirm the page loads and the game canvas is visible.
+4. Confirm the HUD shows scrap, wave, workers, soldiers, timer, and base HP.
+
+### Desktop
+
 1. Run `run.bat`.
 2. Confirm the game window opens.
 3. Confirm the HUD shows scrap, wave, workers, soldiers, timer, and base HP.

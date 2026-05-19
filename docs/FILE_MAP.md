@@ -2,6 +2,9 @@
 
 ## Runtime
 
+- `docs/index.html`: GitHub Pages browser-playable landing page.
+- `docs/styles.css`: responsive page and control-panel styling.
+- `docs/game.js`: browser-native Canvas implementation of the playable prototype.
 - `src/main.py`: application entry point.
 - `src/engine/settings.py`: resolution, grid, timing, and color constants.
 - `src/engine/game.py`: main game loop, input handling, economy, wave flow, placement, and rendering orchestration.

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base Building Game</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Playable browser prototype</p>
+        <h1>Base Building Game</h1>
+        <p class="pitch">
+          Build a low-res scrap outpost, train workers and soldiers, upgrade the base, and survive escalating enemy waves.
+        </p>
+      </section>
+
+      <section class="game-card" aria-label="Playable game">
+        <div class="game-frame">
+          <canvas id="game" width="960" height="640" aria-label="Base Building Game canvas"></canvas>
+          <div class="status-strip">
+            <span id="status">Loading outpost...</span>
+            <button id="restart" type="button">Restart Run</button>
+          </div>
+        </div>
+
+        <aside class="controls-panel">
+          <h2>Command Deck</h2>
+          <div class="control-grid">
+            <button class="action selected" data-action="select" data-building="mine" type="button">1 Mine</button>
+            <button class="action" data-action="select" data-building="turret" type="button">2 Turret</button>
+            <button class="action" data-action="select" data-building="barracks" type="button">3 Barracks</button>
+            <button class="action" data-action="train-worker" type="button">W Worker</button>
+            <button class="action" data-action="train-soldier" type="button">S Soldier</button>
+            <button class="action" data-action="upgrade-economy" type="button">U Economy</button>
+            <button class="action" data-action="upgrade-weapons" type="button">I Weapons</button>
+            <button class="action" data-action="upgrade-armor" type="button">O Armor</button>
+            <button class="action wide" data-action="repair" type="button">R Repair</button>
+            <button class="action wide" data-action="wave" type="button">Space Start Wave</button>
+          </div>
+          <p class="hint">
+            Keyboard works on desktop. Buttons make the prototype playable on touch screens too.
+          </p>
+        </aside>
+      </section>
+
+      <section class="notes">
+        <article>
+          <h2>How To Win</h2>
+          <p>
+            There is no final victory yet. Survive as many waves as possible while keeping the Core HQ alive.
+          </p>
+        </article>
+        <article>
+          <h2>Current Slice</h2>
+          <p>
+            Mines generate scrap, turrets fire automatically, barracks unlock soldiers, and upgrades improve economy, damage, and building armor.
+          </p>
+        </article>
+        <article>
+          <h2>Roadmap</h2>
+          <p>
+            Next up: visible worker units, terrain blockers, better enemy types, low-res sprites, sound, and save/load.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

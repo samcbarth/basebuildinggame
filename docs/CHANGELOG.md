@@ -2,6 +2,7 @@
 
 ## 2026-05-19
 
+- Added playable browser build using HTML5 Canvas for GitHub Pages.
 - Created initial Python/Pygame base-building prototype.
 - Added template-based project structure.
 - Added buildings: HQ, mine, turret, barracks.
